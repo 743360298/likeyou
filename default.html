@@ -1,0 +1,404 @@
+﻿<!DOCTYPE html>
+<html>
+<head lang="en">
+    <meta charset="UTF-8">
+    <title></title>
+    <link href="css/top.css" rel="stylesheet" type="text/css"/>
+    <link rel="stylesheet" href="css/demo1.css"/>
+    <script type="text/javascript" src="js/jquery-1.12.4.js"></script>
+    <script type="text/javascript" src="js/demo1.js"></script>
+    <script src="js/banner.js"></script>
+
+
+    <!--地方tab要引入css文件-->
+    <link rel="stylesheet" href="css/home.css"/>
+    <script src="js/SuperSlide1.js"></script>
+    <script type="text/javascript">
+        $(function () {
+            $(".solution-more-slide").slide({
+                effect: 'fold'
+            });
+        })
+    </script>
+</head>
+<style>
+    .bigbanner {
+        width: 100%;
+        height: 675px;
+    }
+
+    .tab2 {
+        width: 100%;
+        height: 500px;
+        background-color: deeppink;
+    }
+</style>
+<body>
+<!--导航栏-->
+<div class="head">
+    <div class="bd">
+        <!--/toper-->
+        <a><img src="picture/logo.png" id="logo"></a>
+
+        <div id="nav">
+            <ul>
+                <li><a href="index.html" target="_blank">网站首页<span>HOME</span></a></li>
+                <div class="n"></div>
+                <li class=''><a href="婚纱展示.html" target="_blank">婚礼邀请<span style="font-size:9px;">ABOUT US</span></a></li>
+                <div class="n"></div>
+                <li class=''><a href="photo.html" target="_blank">作品展示<span style="font-size:9px;">WORKS</span></a></li>
+                <div class="n"></div>
+                <li class=''><a href="#">客片欣赏<span style="font-size:9px;">SHOWCASE</span></a></li>
+                <div class="n"></div>
+                <li class=''><a href="#">优惠活动<span style="font-size:9px;">EVENTS</span></a></li>
+                <div class="n"></div>
+                <li class=''><a href="#">服务团队<span style="font-size:9px;">TEAM</span></a></li>
+                <div class="n"></div>
+                <li><a href="#">最新团购<span>TUANGGOU</span></a></li>
+                <div class="n"></div>
+                <li class=''><a href="#">特色场景<span style="font-size:9px;">SCENSE</span></a></li>
+                <div class="n"></div>
+                <li><a href="#">联系我们<span>CONTACTUS</span></a></li>
+            </ul>
+        </div>
+        <!--/nav-->
+    </div>
+    <!--/bd-->
+</div>
+<!--导航栏-->
+
+<!--banner--     组长轮播图-->
+<div class="box1"></div>
+<div class="bigbanner">
+
+    <div class="banner" id="banner2" style="margin: 50px auto;">
+        <div class="banner-view"></div>
+        <div class="banner-btn"></div>
+        <div class="banner-number"></div>
+        <div class="banner-progres"></div>
+    </div>
+
+</div>
+<!--banner-->
+<div class="imgshow">
+    <div class="imgshow-wrap">
+        <div class="imgshow-wrap-left" id="imgShowleft">
+            <ul>
+                <li class="menuGroup"><a href="#">
+                    <span><img src="picture/t01.gif" alt=""/></span>
+
+                    <div class="menuDiv menuEspecial"><img src="picture/imgshow01.jpg" alt=""/></div>
+                </a></li>
+                <li><a href="#">
+                    <span><img src="picture/t05.gif" alt=""/></span>
+
+                    <div class="menuDiv"><img src="picture/imgshow02.jpg" alt=""/></div>
+                </a></li>
+                <li><a href="#">
+                    <span><img src="picture/t03.gif" alt=""/></span>
+
+                    <div class="menuDiv"><img src="picture/imgshow03.jpg" alt=""/></div>
+                </a></li>
+                <li><a href="#">
+                    <span><img src="picture/t07.gif" alt=""/></span>
+
+                    <div class="menuDiv"><img src="picture/imgshow04.jpg" alt=""/></div>
+                </a></li>
+                <li><a href="#">
+                    <span><img src="picture/t02.gif" alt=""/></span>
+
+                    <div class="menuDiv"><img src="picture/imgshow05.jpg" alt=""/></div>
+                </a></li>
+            </ul>
+        </div>
+        <div class="imgshow-wrap-right">
+            <div class="wrSpan"><i class="btn"></i></div>
+            <div class="wright"><img src="picture/wrap-right00.jpg" title="黛西"/></div>
+            <div class="wright"><img src="picture/wrap-right01.jpg" title="冬日恋歌"/></div>
+            <div class="wright"><img src="picture/wrap-right02.jpg" title="菲比"/></div>
+            <div class="wright"><img src="picture/wrap-right03.jpg" title="赫本"/></div>
+            <div class="wright"><img src="picture/wrap-right04.jpg" title="秘密花园 "/></div>
+            <div class="wright"><img src="picture/wrap-right05.jpg" title="莫奈花园"/></div>
+            <div class="wright"><img src="picture/wrap-right06.jpg" title="山茶花"/></div>
+            <div class="wright"><img src="picture/wrap-right07.jpg" title="巴厘岛"/></div>
+            <div class="wright"><img src="picture/wrap-right08.jpg" title="三亚"/></div>
+            <div class="wright"><img src="picture/wrap-right09.jpg" title="环球旅行"/></div>
+        </div>
+    </div>
+</div>
+<!--作品切换栏-->
+<div class="public-tab">
+    <div class="tab">
+        <img class="tablogo" src="picture/logo.png" alt=""/><br>
+        <img src="picture/pub-theme.png" alt=""/>
+    </div>
+</div>
+<!--作品切换栏-->
+<!--作品展示1-->
+<div class="product">
+    <div class="productWrap" id="productWrap">
+        <ul>
+            <li style="background-color: rgb(10, 166, 255);">
+                <a href="#">
+                    <div class="lidiv" style="background: url(images/scroll01.jpg) no-repeat center">
+                    </div>
+                </a>
+            </li>
+            <li style="background-color: rgb(255, 255, 77);">
+                <a href="#">
+                    <div class="lidiv" style="background: url(images/scroll02.jpg) no-repeat center">
+                    </div>
+                </a>
+            </li>
+            <li style="background-color: rgb(42, 207, 205);">
+                <a href="#">
+                    <div class="lidiv" style="background: url(images/scroll03.jpg) no-repeat center">
+                    </div>
+                </a>
+            </li>
+            <li style="background-color: rgb(116, 173, 207);">
+                <a href="#">
+                    <div class="lidiv" style="background: url(images/scroll04.jpg) no-repeat center">
+                    </div>
+                </a>
+            </li>
+            <li style="background-color: rgb(225, 86, 76);">
+                <a href="#">
+                    <div class="lidiv" style="background: url(images/scroll05.jpg) no-repeat center">
+                    </div>
+                </a>
+            </li>
+        </ul>
+    </div>
+</div>
+<!--作品展示1-->
+
+<!--作品切换栏-->
+<div class="public-tab">
+    <div class="tab">
+        <img class="tablogo" src="picture/logo.png" alt=""/><br>
+        <a href="">古城韵味</a><span>|</span>
+        <a href="">风花雪月</a><span>|</span>
+        <a href="">都市之关</a><span>|</span>
+        <a href="">阳光海滩</a><span>|</span>
+        <a href="">巴厘风情</a>
+    </div>
+</div>
+<!--作品切换栏-->
+
+<!--啊怡tab栏-->
+<div class="index-page">
+    <div class="solution-more">
+        <div class="solution-more-slide">
+            <div class="container">
+                <div class="hd">
+                    <ul>
+                        <li class="item-1 on">
+                            <i></i>
+
+                            <div class="text">
+                                <h3>北京</h3>
+
+                                <p>执子之手，与子偕老</p>
+                            </div>
+                        </li>
+                        <li class="item-2">
+                            <i></i>
+
+                            <div class="text">
+                                <h3>丽江</h3>
+
+                                <p>为你倾城，倾我志诚</p>
+                            </div>
+                        </li>
+                        <li class="item-3">
+                            <i></i>
+
+                            <div class="text">
+                                <h3>上海</h3>
+
+                                <p>爱你所爱，无问西东</p>
+                            </div>
+                        </li>
+                        <li class="item-4">
+                            <i></i>
+
+                            <div class="text">
+                                <h3>马尔代夫</h3>
+
+                                <p>过客万千，独为你钟情</p>
+                            </div>
+                        </li>
+                        <li class="item-5">
+                            <i></i>
+
+                            <div class="text">
+                                <h3>巴厘岛</h3>
+
+                                <p>始于动心，终于白首</p>
+                            </div>
+                        </li>
+                        <!--<li class="item-6">-->
+                        <!--<i></i>-->
+                        <!--<div class="text">-->
+                        <!--<h3>青岛</h3>-->
+                        <!--<p>爱你所爱，无问西东</p>-->
+                        <!--</div>-->
+                        <!--</li>-->
+                    </ul>
+                </div>
+                <ul class="bd" style="position: relative; width: 1920px; height: 600px;">
+                    <li class="item-1"
+                        style="position: absolute; width: 1920px; left: 0px; top: 0px; display: list-item;">
+                        <img src="img/bj12.jpg" width="100%" height="600" alt=""/>
+                    </li>
+                    <li class="item-2" style="position: absolute; width: 1920px; left: 0px; top: 0px; display: none;">
+                        <img src="img/lj12.jpg" width="100%" height="600" alt=""/>
+                    </li>
+                    <li class="item-3" style="position: absolute; width: 1920px; left: 0px; top: 0px; display: none;">
+                        <img src="img/sh12.jpg" width="100%" height="600" alt=""/>
+                    </li>
+                    <li class="item-4" style="position: absolute; width: 1920px; left: 0px; top: 0px; display: none;">
+                        <img src="img/mrdf12.jpg" width="100%" height="600" alt=""/>
+                    </li>
+                    <li class="item-5" style="position: absolute; width: 1920px; left: 0px; top: 0px; display: none;">
+                        <img src="img/bld12.jpg" width="100%" height="600"/>
+                    </li>
+                    <!--<li class="item-6" style="position: absolute; width: 1920px; left: 0px; top: 0px; display: none;">-->
+                    <!--<img src="img/qd112.jpg" width="100%" height="600"/>-->
+                    <!--</li>-->
+                </ul>
+            </div>
+        </div>
+    </div>
+</div>
+<!---->
+<!---->
+
+<!--作品切换栏-->
+<div class="public-tab">
+    <div class="tab">
+        <img class="tablogo" src="picture/logo.png" alt=""/><br>
+        <a href="">创意主题 </a><span>|</span>
+        <a href="">独家基地</a><span>|</span>
+        <a href="">特色外景</a><span>|</span>
+        <a href="">全球旅拍</a><span>|</span>
+        <a href="">艺术写真</a>
+    </div>
+</div>
+<!--作品切换栏-->
+
+<!--作品展示2-->
+<div class="wrap" id="wrap">
+    <div class="slide" id="slide">
+        <ul>
+            <li><a href="#"><img src="picture/1-1606211j934x4.jpg" alt="无法加载图片" title="赫本"/></a></li>
+            <li><a href="#"><img src="picture/1-1606211p11r08.jpg" alt="无法加载图片" title="冬日恋歌"/></a></li>
+            <li><a href="#"><img src="picture/1-1606211p22lh.jpg" alt="无法加载图片" title="菲比"/></a></li>
+            <li><a href="#"><img src="picture/1-1606211p3201z.jpg" alt="无法加载图片" title="黛西"/></a></li>
+            <li><a href="#"><img src="picture/1-1606211p252324.jpg" alt="无法加载图片" title="秘密花园"/></a></li>
+            <li><a href="#"><img src="picture/1-1606211phi07.jpg" alt="无法加载图片" title="莫奈花园"/></a></li>
+            <li><a href="#"><img src="picture/1-1606211r423549.jpg" alt="无法加载图片" title="山茶花"/></a></li>
+            <li><a href="#"><img src="picture/1-1606211s5293l.jpg" alt="无法加载图片" title="巴厘岛"/></a></li>
+        </ul>
+    </div>
+</div>
+<!--作品展示2-->
+<div class="footer">
+    <div class="footer_list">
+        <div class="footer_list_box footer_list_box1">
+            <h4>婚庆服务</h4>
+            <ul>
+                <li><a href="#">婚宴酒店</a></li>
+                <li><a href="#">婚礼策划</a></li>
+                <li><a href="#">婚纱摄影</a></li>
+                <li><a href="#">婚礼跟拍</a></li>
+                <li><a href="#">婚礼摄像</a></li>
+                <li><a href="#">婚礼跟妆</a></li>
+                <li><a href="#">婚礼司仪</a></li>
+                <li><a href="#">婚礼租赁</a></li>
+            </ul>
+        </div>
+        <div class="footer_list_box footer_list_box1">
+            <h4>结婚用品</h4>
+            <ul>
+                <li><a href="#">结婚礼服</a></li>
+                <li><a href="#">婚鞋婚包</a></li>
+                <li><a href="#">钻石珠宝</a></li>
+                <li><a href="#">婚礼百货</a></li>
+                <li><a href="#">喜糖喜酒</a></li>
+                <li><a href="#">婚房布置</a></li>
+                <li><a href="#">内衣胸贴</a></li>
+                <li><a href="#">饰品配饰</a></li>
+            </ul>
+        </div>
+        <div class="footer_list_box ">
+            <h4>结婚攻略</h4>
+            <ul>
+                <li><a href="#">结婚流程</a></li>
+                <li><a href="#">拍婚纱照</a></li>
+                <li><a href="#">婚礼筹备</a></li>
+                <li><a href="#">婚礼现场</a></li>
+            </ul>
+        </div>
+        <div class="footer_list_box ">
+            <h4>关于我们</h4>
+            <ul>
+                <li><a href="#">联系方式</a></li>
+                <li><a href="#">纸短情长招聘</a></li>
+                <li><a href="#">纸短情长微博</a></li>
+            </ul>
+        </div>
+        <div class="footer_list_box ">
+            <h4>婚纱纸短情长APP</h4>
+            <ul>
+                <li><img src="picture/ewm.png" alt="" class="ewm"></li>
+            </ul>
+        </div>
+
+    </div>
+    <!--友情链接开始-->
+    <div class="link_friend">
+        <span>友情链接:</span>
+
+        <div>
+            <a href="#">婚宴酒店预定</a>
+            <a href="#">鲜花网</a>
+            <a href="#">钻戒品牌</a>
+            <a href="#">京东</a>
+            <a href="#">淘宝</a>
+            <a href="#">生活服务网</a>
+            <a href="#">网上花店</a>
+            <a href="#">婚庆公司</a>
+            <a href="#">摄影公司</a>
+            <a href="#">周六福</a>
+            <a href="#">周先生</a>
+
+        </div>
+    </div>
+    <!--友情链接结束-->
+    <div class="information">
+        <p>
+            <span>广ICP备1681688888号 © 广州纸短情长婚纱股份有限公司</span>
+            <span>广公安备案号：16816816816816888</span>
+        </p>
+
+        <p>
+            <span>通讯地址：广东省广州市天河区珠吉街道珠吉路</span>
+            <span>客服热线：400-168-1688</span>
+        </p>
+    </div>
+
+    <!-- 音乐-->
+    <audio src="MP3/LookYou.mp3" autoplay loop controls id="miuse2"></audio>
+</div>
+</body>
+<!--音乐-->
+<script>
+    $(function () {
+        $('.top-menu ul li a').on('click', function () {
+            $('audio')[0].play()
+        })
+    })
+</script>
+</html>

@@ -1,0 +1,480 @@
+/*重置*/
+body, div, dl, dt, dd, ul, ol, li, h1, h2, h3, h4, h5, h6, pre, form, fieldset, input, textarea, p, blockquote, th, td {
+    margin: 0;
+    padding: 0;
+}
+
+table {
+    border-collapse: collapse;
+    border-spacing: 0;
+}
+
+fieldset, img {
+    border: 0;
+}
+
+address, caption, cite, code, dfn, em, strong, th, var {
+    font-style: normal;
+    font-weight: normal;
+}
+
+ol, ul {
+    list-style: none;
+}
+
+caption, th {
+    text-align: left;
+}
+
+h1, h2, h3, h4, h5, h6 {
+    font-size: 100%;
+    font-weight: normal;
+}
+
+q:before, q:after {
+    /*content:;*/
+}
+
+abbr, acronym {
+    border: 0;
+}
+
+body {
+    color: #666;
+    background-color: #fff;
+    font: 12px/1.5 '微软雅黑', tahoma, arial, 'Hiragino Sans GB', 宋体, sans-serif;
+}
+
+.clearfix:after {
+    visibility: hidden;
+    display: block;
+    font-size: 0;
+    content: " ";
+    clear: both;
+    height: 0;
+}
+
+.clearfix {
+    zoom: 1;
+}
+
+/*公共切换栏开始*/
+.public-tab {
+    height: 160px;
+    background: white;
+}
+
+.tab {
+    width: 934px;
+    margin: 0 auto;
+    height: 160px;
+    text-align: center;
+}
+
+.tab a {
+    color: #9fa0a0;
+    width: 70px;
+    display: inline-block;
+
+}
+
+.tab .tablogo {
+    margin-top: 10px;
+}
+
+/*公共切换栏结束*/
+
+
+/*头部导航栏样式*/
+.nav-menu {
+    display: block;
+    /* background: #74adaa;*/
+    width: 1005px;
+    margin: 0 auto;
+}
+
+.nav-menu > li {
+    display: inline;
+    float: left;
+    border-right: 1px solid #94c0be;
+}
+
+.nav-menu > li:last-child {
+    border-right: none;
+}
+
+.nav-menu li a {
+    color: #fff;
+    display: block;
+    text-decoration: none;
+    /*调用本地字体*/
+    font-family: sansationregular;
+    -webkit-font-smoothing: antialiased;
+    -moz-font-smoothing: antialiased;
+    font-smoothing: antialiased;
+    text-transform: capitalize;
+    overflow: visible;
+    line-height: 20px;
+    font-size: 18px;
+    padding: 15px 36px 15px 37px;
+}
+
+.three-d {
+
+    /* 任务三、设置3D舞台布景 */
+    -webkit-perspective: 200px;
+    -moz-perspective: 200px;
+    -ms-perspective: 200px;
+    -o-perspective: 200px;
+    perspective: 200px;
+    /*任务四、设置3D舞台布景过渡效果*/
+    -webkit-transition: all .07s linear;
+    -moz-transition: all .07s linear;
+    -ms-transition: all .07s linear;
+    -o-transition: all .07s linear;
+    transition: all .7s linear;
+    position: relative;
+}
+
+.three-d:not(.active):hover {
+    cursor: pointer;
+}
+
+/*任务五、给不是当前状态的3D舞台的悬浮与聚焦状态设置变形效果*/
+
+.three-d:not(.active):hover .three-d-box,
+.three-d:not(.active):focus .three-d-box {
+    -wekbit-transform: translateZ(-25px) rotateX(90deg);
+    -moz-transform: translateZ(-25px) rotateX(90deg);
+    -o-transform: translateZ(-25px) rotateX(90deg);
+    -ms-transform: translateZ(-25px) rotateX(90deg);
+    transform: translateZ(-25px) rotateX(90deg);
+}
+
+.three-d-box {
+    /*任务六、给3D舞台中“.three-d-box”设置过渡与变形效果*/
+    -webkit-transition: all .3s ease-out;
+    -moz-transition: all .3s ease-out;
+    -ms-transition: all .3s ease-out;
+    -o-transition: all .3s ease-out;
+    transition: all .3s ease-out;
+    -webkit-transform: translatez(-25px);
+    -moz-transform: translatez(-25px);
+    -ms-transform: translatez(-25px);
+    -o-transform: translatez(-25px);
+    transform: translatez(-25px);
+    -webkit-transform-style: preserve-3d;
+    -moz-transform-style: preserve-3d;
+    -ms-transform-style: preserve-3d;
+    -o-transform-style: preserve-3d;
+    transform-style: preserve-3d;
+    -webkit-pointer-events: none;
+    -moz-pointer-events: none;
+    -ms-pointer-events: none;
+    -o-pointer-events: none;
+    pointer-events: none;
+    position: absolute;
+    top: 0;
+    left: 0;
+    display: block;
+    width: 100%;
+    height: 100%;
+}
+
+/*任务七、给导航设置3D前，与3D后变形效果*/
+
+.front {
+    -webkit-transform: rotatex(0deg) translatez(25px);
+    -moz-transform: rotatex(0deg) translatez(25px);
+    -ms-transform: rotatex(0deg) translatez(25px);
+    -o-transform: rotatex(0deg) translatez(25px);
+    transform: rotatex(0deg) translatez(25px);
+}
+
+.back {
+    -webkit-transform: rotatex(-90deg) translatez(25px);
+    -moz-transform: rotatex(-90deg) translatez(25px);
+    -ms-transform: rotatex(-90deg) translatez(25px);
+    -o-transform: rotatex(-90deg) translatez(25px);
+    transform: rotatex(-90deg) translatez(25px);
+    color: #FFE7C4;
+}
+
+.front, .back {
+    /*          border:1px solid red;*/
+    display: block;
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    background: #74adaa;
+    padding: 15px 30px 15px 31px;
+    color: white;
+    -webkit-pointer-events: none;
+    -moz-pointer-events: none;
+    -ms-pointer-events: none;
+    -o-pointer-events: none;
+    pointer-events: none;
+    -webkit-box-sizing: border-box;
+    box-sizing: border-box;
+}
+
+/*任务八、设置导航当前状态与悬浮状态下的背景效果*/
+
+.nav-menu li .active .front,
+.nav-menu li .active .back,
+.nav-menu li a:hover .front,
+.nav-menu li a:hover .back {
+    background-color: #51938f;
+    -webkit-background-size: 5px 5px;
+    background-size: 5px 5px;
+    background-position: 0 0, 30px 30px;
+    /*background-image: -webit-linear-gradient(45deg, #478480 25%, transparent 25%, transparent 75%, #478480 75%, #478480), linear-gradient(45deg, #478480 25%, transparent 25%, transparent 75%, #478480 75%, #478480);*/
+    background-image: -moz-linear-gradient(45deg, #478480 25%, transparent 25%, transparent 75%, #478480 75%, #478480), linear-gradient(45deg, #478480 25%, transparent 25%, transparent 75%, #478480 75%, #478480);
+    background-image: -ms-linear-gradient(45deg, #478480 25%, transparent 25%, transparent 75%, #478480 75%, #478480), linear-gradient(45deg, #478480 25%, transparent 25%, transparent 75%, #478480 75%, #478480);
+    background-image: -o-linear-gradient(45deg, #478480 25%, transparent 25%, transparent 75%, #478480 75%, #478480), linear-gradient(45deg, #478480 25%, transparent 25%, transparent 75%, #478480 75%, #478480);
+    background-image: linear-gradient(45deg, #478480 25%, transparent 25%, transparent 75%, #478480 75%, #478480), linear-gradient(45deg, #478480 25%, transparent 25%, transparent 75%, #478480 75%, #478480);
+
+}
+
+.nav-menu ul {
+    position: absolute;
+    text-align: left;
+    line-height: 40px;
+    font-size: 14px;
+    width: 200px;
+    -webkit-transition: all 0.3s ease-in;
+    -moz-transition: all 0.3s ease-in;
+    -ms-transition: all 0.3s ease-in;
+    -o-transition: all 0.3s ease-in;
+    transition: all 0.3s ease-in;
+    -webkit-transform-origin: 0px 0px;
+    -moz-transform-origin: 0px 0px;
+    -ms-transform-origin: 0px 0px;
+    -o-transform-origin: 0px 0px;
+    transform-origin: 0px 0px;
+    -webkit-transform: rotateX(-90deg);
+    -moz-transform: rotateX(-90deg);
+    -ms-transform: rotateX(-90deg);
+    -o-transform: rotateX(-90deg);
+    transform: rotateX(-90deg);
+    -webkit-backface-visibility: hidden;
+    -moz-backface-visibility: hidden;
+    -ms-backface-visibility: hidden;
+    -o-backface-visibility: hidden;
+    backface-visibility: hidden;
+}
+
+/*任务九、显示下拉导航菜单，并其设置一个变形效果*/
+.nav-menu > li:hover ul {
+    /*          display: block;*/
+    -webkit-transform: rotateX(0deg);
+    -moz-transform: rotateX(0deg);
+    -ms-transform: rotateX(0deg);
+    -o-transform: rotateX(0deg);
+    transform: rotateX(0deg);
+}
+
+/*插件样式*/
+.caroursel{margin:0px auto;}
+.poster-main {
+    position: relative;
+    width: 900px;
+    height: 500px
+}
+
+.poster-main a, .poster-main img {
+    display: block;
+}
+
+.poster-main .poster-list {
+    width: 900px;
+    height: 500px
+}
+
+.poster-main .poster-list .poster-item {
+    position: absolute;
+    left: 0px;
+    top: 0px
+}
+
+.poster-main .poster-btn {
+    position: absolute;
+    height: 100%;
+    width: 100px;
+    top: 0px;
+    z-index: 10;
+    opacity: 0.5;
+}
+
+.poster-main .poster-prev-btn {
+    left: 0px;
+    background: url("../images/btn_l.png") no-repeat center center;
+    background-color: #000
+}
+
+.poster-main .poster-next-btn {
+    right: 0px;
+    background: url("../images/btn_r.png") no-repeat center center;
+    background-color: #000
+}
+
+
+/*活动优惠界面*/
+.images {
+    position: relative;
+    margin: 0 auto;
+    height: 500px;
+    width: 1000px;
+}
+.images li:first-child{
+    position: absolute;
+    overflow: hidden;
+    width: 500px;
+    height: 500px;
+
+}
+
+.images li:nth-child(2) {
+    position: absolute;
+    width: 490px;
+    height: 250px;
+    overflow: hidden;
+    right: 0;
+    top: 0;
+}
+
+.images li:nth-child(3) {
+    position: absolute;
+    overflow: hidden;
+    width: 245px;
+    height: 245px;
+    right: 245px;
+    bottom: 0;
+}
+
+.images li:nth-child(4) {
+    position: absolute;
+    overflow: hidden;
+    width: 245px;
+    height: 245px;
+    margin-left: 2px;
+    right: 0;
+    bottom: 0;
+}
+.images img {
+    transition: all 0.6s;
+}
+.images img:hover {
+    transform: scale(1.2); /* 放大1.2倍 */
+}
+
+
+.video {
+    position: relative;
+    width: 1000px;
+    height: 760px;
+    margin: 0 auto;
+}
+.small1 {
+    position: absolute;
+    bottom: 0;
+    width: 328px;
+    height: 186px;
+}
+.small2 {
+    position: absolute;
+    bottom: 0;
+    left: 336px;
+    width: 328px;
+    height: 186px;
+}
+.small3 {
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    width: 328px;
+    height: 186px;
+}
+
+
+.footer {
+    width: 1000px;
+    height: 430px;
+    background-color: #494949;
+    margin-top: 10px;
+    margin: 0 auto;
+}
+.footer_list{
+    border-bottom: 2px solid #4f5159;
+    height: 200px;
+}
+.footer_list_box{
+    float: left;
+    width: 160px;
+    margin-top: 20px;
+}
+.footer_list_box h4 {
+    color: #fff;
+    font-size: 18px;
+    font-weight: bold;
+    line-height: 44px;
+}
+.footer_list_box li a {
+    color: rgb(255, 255, 255);
+    font-family: 宋体;
+}
+.footer_list_box ul li{
+    width: 100%;
+    float: left;
+    font-size: 12px;
+    color: #cccccc;
+    line-height: 28px;
+}
+.footer .footer_list_box1 li {
+    width: 80px;
+}
+.footer_list_box1 {
+    width: 160px;
+    margin: 0px 41px;
+    margin-top: 20px;
+}
+.ewm{
+    width: 100px;
+    height: 100px;
+}
+/*友情链接开始*/
+.link_friend{
+    margin: 20px 40px;
+}
+.link_friend span {
+    width: 65px;
+    float: left;
+    line-height: 24px;
+    color: #fff;
+    font-size: 12px;
+}
+.link_friend a {
+    color: #ccc;
+    line-height: 24px;
+    font-size: 12px;
+    padding: 0 9px;
+    display: inline-block;
+}
+/*友情链接结束*/
+.information {
+    background: #424142;
+    font-size: 12px;
+    color: #fff;
+    text-align: center;
+    padding: 22px 0 24px 0;
+}
+.information p {
+    line-height: 20px;
+    margin-top: 7px;
+}
+.information span {
+    margin: 0 20px;
+}
+/*底部部分结束*/
